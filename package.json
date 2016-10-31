@@ -1,0 +1,29 @@
+{
+  "name": "st-api",
+  "version": "0.0.1",
+  "description": "前后端通用的 API 模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mock": "json-server -c ./mock/json-server.json --watch ./mock/db.json --routes ./mock/routes.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparetire/st-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Sparetire",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sparetire/st-api/issues"
+  },
+  "homepage": "https://github.com/sparetire/st-api#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "querystring": "^0.2.0",
+    "request": "^2.76.0",
+    "url": "^0.11.0"
+  }
+}
