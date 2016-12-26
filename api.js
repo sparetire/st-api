@@ -160,6 +160,8 @@ function Api(opts, httpClient) {
 				body = querystring.stringify(arguments[0]);
 			} else if (!flag && util.isObject(arguments[0]) && this.type === Api.JSON) {
 				body = JSON.stringify(arguments[0]);
+			} else if (typeof arguments[0] === 'string') {
+				body = arguments[0];
 			} else {
 				opts = arguments[0];
 			}
@@ -206,6 +208,8 @@ function Api(opts, httpClient) {
 				body = querystring.stringify(arguments[0]);
 			} else if (!flag && util.isObject(arguments[0]) && this.type === Api.JSON) {
 				body = JSON.stringify(arguments[0]);
+			} else if (typeof arguments[0] === 'string') {
+				body = arguments[0];
 			} else {
 				opts = arguments[0];
 			}
